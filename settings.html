@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Intip.in's Tab Manager</title>
+		<link rel="stylesheet" href="src/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" href="src/jquery-ui.min.css" type="text/css">
+		<link rel="stylesheet" href="options.css" type="text/css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="/options.html" class="navbar-brand">
+						<img class="pull-left" src="img/icon_32.png">
+						<span>Tab Manager</span>
+					</a>
+				</div>
+				<div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="/options.html">Tabs List</a></li>
+						<li class="active"><a href="/settings.html">Settings</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="alert alert-dismissible alert-warning">
+				<h4>Warning!</h4>
+				<p>This is Beta release. We would gladly response your feedback.</p>
+			</div>
+
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label for="nightly" class="col-lg-2 control-label">Nightly</label>
+					<div class="col-lg-10">
+						<div class="checkbox">
+							<label><input type="checkbox" name="nightly"> Enable dark mode theme.</label>
+						</div>
+					</div>
+				</div>
+
+			</form>
+		</div>
+
+		<script src="src/jquery.min.js"></script>
+		<script src="src/jquery-ui.min.js"></script>
+		<script src="src/bootstrap.min.js"></script>
+		<script src="options.js"></script>
+	</body>
+</html>

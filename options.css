@@ -1,0 +1,24 @@
+body { background-color: #fcfcfc; }
+.navbar { background-color: #7A1EA1; }
+.navbar .navbar-nav>li>a:hover,
+.navbar .navbar-nav>li>a:focus { background-color: #4A148C; }
+.navbar .navbar-nav>.active>a,
+.navbar .navbar-nav>.active>a:hover,
+.navbar .navbar-nav>.active>a:focus {
+	background-color: #691A99;
+}
+
+.navbar-brand > img { max-width: 100%; max-height: 100%; margin-right: 8px; } 
+.fav { margin: 0 16px; }
+.fav img { cursor: move; width: 16px; height: 16px; }
+.tabs { margin-bottom: 22px; }
+.tabs .list { padding: 3px; font-size: 14px; }
+.tabs .list a { color: #d9230f; }
+.tabs .list .glyphicon { font-size: 9px; width: 10px; }
+.tabs .list .glyphicon:hover { cursor: pointer; }
+.head-list { border-bottom: 1px solid #ccc; margin-bottom: 9px; padding-bottom: 9px; }
+
+.nightly { background-color: #222222; color: #ffffff; }
+.nightly .list a { color: #0ce3ac; }
+.nightly .h3 { color: inherit; }
+.nightly .well { background-color: #303030; border-color: #303030; }
