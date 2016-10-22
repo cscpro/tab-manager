@@ -246,6 +246,6 @@ $( '#content' ).on( 'focusout', '.input-sm', function() {
 
 $( window ).focus( function() {
 	chrome.storage.local.get( function ( res ) {
-		//initTab( res.tabs );
+		initTab( res.tabs );
 	} );
 } );
