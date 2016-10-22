@@ -1,7 +1,7 @@
 {
 	"name": "Intip.in's Tab Manager",
 	"description": "Tab Manager that doesn't track you.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"manifest_version": 2,
 	"options_page": "options.html",
 	"icons": {
