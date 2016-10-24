@@ -19,10 +19,15 @@ function saveTab( arrayOfTabs ) {
 			}
 		}
 
-		for ( var i = 0; i < tab_len; i++ ) {
-			var activeTab = arrayOfTabs[i];
-			if ( tab_len > 1 && activeTab.url.contains( 'chrome-extension://' ) ) {
-				chrome.tabs.remove( activeTab.id );
+		chrome.runtime.openOptionsPage();
+
+		for ( var i = 1; i <= tab_len; i++ ) {
+			var activeTab = arrayOfTabs[i-1];
+
+			if ( activeTab.url == 'chrome://newtab/' ) continue;
+			if ( activeTab.url.contains( 'chrome-extension://' ) ) {
+				if ( tab_len > 1 ) chrome.tabs.remove( activeTab.id );
+				else chrome.runtime.openOptionsPage();
 				continue;
 			}
 
@@ -34,8 +39,8 @@ function saveTab( arrayOfTabs ) {
 
 			list.push( simpan );
 
-			if ( i == tab_len - 1 ) {
-				if ( latest_tab && tab_len == 1 ) {
+			if ( i == tab_len ) {
+				if ( latest_tab && tab_len == 0 ) {
 					tabs[latest_tab].list.push( simpan );
 
 				} else {
